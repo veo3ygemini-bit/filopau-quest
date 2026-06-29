@@ -11,10 +11,11 @@ import {
   Sparkles,
   Star,
   Trophy,
+  Upload,
   Zap,
 } from "lucide-react";
 import { AXES, getNextLesson, hasBackendApi, isUnitUnlocked, loadContent, unitStars } from "./lib/content.js";
-import { applyBossResult, applyLessonResult, loadProgress, refillHearts, saveProgress } from "./lib/progress.js";
+import { applyBossResult, applyLessonResult, importProgressText, loadProgress, progressTransferUrl, refillHearts, saveProgress } from "./lib/progress.js";
 import { normalizeText, compact } from "./lib/text.js";
 
 const statusLabels = {
@@ -78,6 +79,29 @@ export default function App() {
     setToast(null);
   }
 
+  async function copyOnlineProgressLink() {
+    const url = progressTransferUrl(progress);
+    try {
+      await navigator.clipboard.writeText(url);
+      setToast({ tone: "success", text: "Enlace online con tu progreso copiado." });
+    } catch {
+      window.prompt("Copia este enlace para abrir la app online con tu progreso:", url);
+    }
+  }
+
+  function importProgress() {
+    const raw = window.prompt("Pega aquí un enlace o código de progreso:");
+    if (!raw) return;
+    try {
+      const imported = importProgressText(raw);
+      setProgress(imported);
+      saveProgress(imported);
+      setToast({ tone: "success", text: "Progreso importado y guardado en este navegador." });
+    } catch {
+      setToast({ tone: "danger", text: "No he podido importar ese progreso." });
+    }
+  }
+
   function completeLesson(lesson, result) {
     const updated = applyLessonResult(progress, lesson, result);
     setProgress(updated);
@@ -110,6 +134,8 @@ export default function App() {
         onFocusMode={() => setFocusMode((value) => !value)}
         onRefill={() => setProgress(refillHearts(progress))}
         onHome={() => setActiveLesson(null)}
+        onCopyProgress={copyOnlineProgressLink}
+        onImportProgress={importProgress}
       />
 
       <main className="game-main">
@@ -148,7 +174,7 @@ function LoadingScreen() {
   );
 }
 
-function Sidebar({ progress, aiStatus, nextLesson, focusMode, onFocusMode, onRefill, onHome }) {
+function Sidebar({ progress, aiStatus, nextLesson, focusMode, onFocusMode, onRefill, onHome, onCopyProgress, onImportProgress }) {
   const hearts = Array.from({ length: 3 }, (_, index) => index < progress.hearts);
   return (
     <aside className="sidebar">
@@ -179,6 +205,17 @@ function Sidebar({ progress, aiStatus, nextLesson, focusMode, onFocusMode, onRef
         <ShieldCheck size={18} />
         {focusMode ? "Salir de foco" : "Modo foco"}
       </button>
+
+      <div className="progress-tools">
+        <button onClick={onCopyProgress} title="Copiar enlace de la web online con este progreso">
+          <Upload size={17} />
+          Enlace online
+        </button>
+        <button onClick={onImportProgress} title="Importar un enlace o código de progreso">
+          <RotateCcw size={17} />
+          Importar
+        </button>
+      </div>
 
       <div className="next-card">
         <small>Siguiente misión</small>

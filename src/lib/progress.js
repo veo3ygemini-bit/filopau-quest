@@ -1,4 +1,5 @@
 const STORAGE_KEY = "filopau_progress_v2";
+const PUBLIC_APP_URL = "https://veo3ygemini-bit.github.io/filopau-quest/";
 
 export const initialProgress = {
   xp: 0,
@@ -24,6 +25,13 @@ export function hydrateLocalProgress() {
 }
 
 export async function loadProgress() {
+  const imported = readProgressFromUrl();
+  if (imported) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(imported));
+    stripProgressFromUrl();
+    return imported;
+  }
+
   const local = hydrateLocalProgress();
   if (hasBackendApi()) {
     try {
@@ -141,4 +149,64 @@ export function applyBossResult(progress, lesson, evaluation) {
 
 export function refillHearts(progress) {
   return normalizeProgress({ ...progress, hearts: 3 });
+}
+
+export function portableProgress(progress) {
+  const normalized = normalizeProgress(progress || {});
+  return {
+    xp: normalized.xp,
+    level: normalized.level,
+    hearts: normalized.hearts,
+    streak: normalized.streak,
+    startedAt: normalized.startedAt,
+    lastSeen: normalized.lastSeen,
+    completedLessons: normalized.completedLessons,
+    lessonScores: normalized.lessonScores,
+    bossHistory: normalized.bossHistory,
+  };
+}
+
+export function encodeProgress(progress) {
+  return btoa(JSON.stringify(portableProgress(progress)))
+    .replaceAll("+", "-")
+    .replaceAll("/", "_")
+    .replace(/=+$/g, "");
+}
+
+export function decodeProgress(value) {
+  const padded = String(value || "").replaceAll("-", "+").replaceAll("_", "/");
+  const raw = padded + "=".repeat((4 - (padded.length % 4)) % 4);
+  return normalizeProgress(JSON.parse(atob(raw)));
+}
+
+export function progressTransferUrl(progress) {
+  return `${PUBLIC_APP_URL}?progress=${encodeURIComponent(encodeProgress(progress))}`;
+}
+
+export function importProgressText(value) {
+  const trimmed = String(value || "").trim();
+  if (!trimmed) throw new Error("No hay progreso para importar.");
+  if (trimmed.startsWith("http")) {
+    const url = new URL(trimmed);
+    const payload = url.searchParams.get("progress");
+    if (!payload) throw new Error("El enlace no contiene progreso.");
+    return decodeProgress(payload);
+  }
+  if (trimmed.startsWith("{")) return normalizeProgress(JSON.parse(trimmed));
+  return decodeProgress(trimmed);
+}
+
+function readProgressFromUrl() {
+  try {
+    const payload = new URLSearchParams(window.location.search).get("progress");
+    return payload ? decodeProgress(payload) : null;
+  } catch {
+    return null;
+  }
+}
+
+function stripProgressFromUrl() {
+  const url = new URL(window.location.href);
+  url.searchParams.delete("progress");
+  window.history.replaceState({}, "", url.toString());
 }
