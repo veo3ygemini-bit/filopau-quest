@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.local.example
+progress.local.json
+node_modules/
+dist/
+qa/
+render_manual/
+*.log
+.DS_Store
+Thumbs.db

@@ -1,0 +1,683 @@
+{
+  "principles": [
+    "Recuerdo activo: responder antes de mirar.",
+    "Repeticion espaciada: lo fallado vuelve pronto; lo dominado se aleja.",
+    "Intercalado: mezclar autores parecidos para evitar reconocimiento pasivo.",
+    "Practica generativa: explicar con tus palabras y recibir feedback.",
+    "Metacognicion calibrada: la app estima dominio por evidencia, no por sensacion.",
+    "Carga cognitiva baja: una tarea principal por pantalla."
+  ],
+  "authors": [
+    {
+      "id": "platon",
+      "name": "Platon",
+      "school": "Idealismo",
+      "color": "#2f5e9e",
+      "examThesis": "Platon defiende una realidad dual: el mundo sensible es cambiante e imperfecto, mientras que el mundo inteligible contiene Ideas eternas conocidas por la razon.",
+      "concepts": [
+        [
+          "Idea",
+          "Forma o esencia eterna e inmutable que pertenece al Mundo Inteligible."
+        ],
+        [
+          "Mundo sensible",
+          "Realidad material que percibimos por los sentidos; imperfecta, cambiante y perecedera."
+        ],
+        [
+          "Mundo inteligible",
+          "Realidad inmaterial, universal, perfecta, eterna e inmutable, captada por la razon."
+        ],
+        [
+          "Bien",
+          "Idea suprema que representa la perfeccion absoluta y es fuente de verdad, conocimiento y existencia."
+        ],
+        [
+          "Doxa",
+          "Opinion o conocimiento del mundo sensible; imperfecto e incompleto."
+        ],
+        [
+          "Episteme",
+          "Ciencia o saber verdadero del mundo inteligible, alcanzado por la razon."
+        ],
+        [
+          "Reminiscencia",
+          "Conocer es recordar, porque el alma conocio las Ideas antes de unirse al cuerpo."
+        ],
+        [
+          "Participacion",
+          "Relacion por la cual los objetos sensibles son copias imperfectas de las Ideas perfectas."
+        ],
+        [
+          "Alma tripartita",
+          "Division del alma en racional, irascible y apetitiva."
+        ],
+        [
+          "Virtud",
+          "Excelencia moral del alma; prudencia, valentia, templanza y justicia."
+        ],
+        [
+          "Armonia / justicia",
+          "Equilibrio donde cada parte del alma o de la sociedad cumple su funcion."
+        ]
+      ],
+      "learn": [
+        "No estudies a Platon como lista: su clave es que lo sensible no basta para explicar verdad, bien y conocimiento.",
+        "Si te preguntan por conocimiento, contrasta doxa con episteme.",
+        "Si te preguntan por politica, conecta justicia del alma con justicia del Estado."
+      ]
+    },
+    {
+      "id": "aristoteles",
+      "name": "Aristoteles",
+      "school": "Realismo",
+      "color": "#176d4a",
+      "examThesis": "Aristoteles rechaza separar las Ideas del mundo sensible: la realidad esta en las sustancias concretas, compuestas de materia y forma.",
+      "concepts": [
+        [
+          "Sustancia",
+          "Aquello que existe en si mismo y actua como sustrato que soporta accidentes."
+        ],
+        [
+          "Accidente",
+          "Propiedad que existe en una sustancia y no por si misma."
+        ],
+        [
+          "Categoria",
+          "Modo fundamental de ser: sustancia, cantidad, cualidad, lugar, tiempo, relacion, situacion, condicion, accion y pasion."
+        ],
+        [
+          "Hilemorfismo",
+          "Teoria segun la cual los seres del mundo sensible estan compuestos de materia y forma."
+        ],
+        [
+          "Causa",
+          "Principio que explica por que algo existe o sucede: material, formal, eficiente y final."
+        ],
+        [
+          "Potencia",
+          "Capacidad de un ser para convertirse en algo distinto."
+        ],
+        [
+          "Acto",
+          "Estado de plenitud alcanzado cuando un ser desarrolla sus posibilidades."
+        ],
+        [
+          "Abstraccion",
+          "Proceso por el que la mente separa lo esencial de un objeto concreto para conocer su esencia universal."
+        ],
+        [
+          "Felicidad / eudaimonia",
+          "Fin ultimo del ser humano, alcanzado viviendo segun la razon y practicando virtudes."
+        ],
+        [
+          "Virtud",
+          "Habito positivo; distingue virtudes eticas y dianoeticas."
+        ],
+        [
+          "Polis",
+          "Comunidad politica natural donde el ser humano se desarrolla plenamente."
+        ],
+        [
+          "Alma",
+          "Principio vital del cuerpo; unida sustancialmente al cuerpo."
+        ],
+        [
+          "Funciones del alma",
+          "Vegetativa, sensitiva y racional; la racional es exclusiva del ser humano."
+        ],
+        [
+          "Termino medio",
+          "Criterio etico que evita exceso y defecto en la accion."
+        ]
+      ],
+      "learn": [
+        "Aristoteles se aprende como respuesta a Platon: no hay que huir del mundo sensible, sino entender las sustancias concretas.",
+        "Cambio = potencia hacia acto. Ser concreto = materia + forma.",
+        "Etica = felicidad por virtud; politica = polis como marco natural."
+      ]
+    },
+    {
+      "id": "aquino",
+      "name": "Tomas de Aquino",
+      "school": "Escolastica",
+      "color": "#ba8b17",
+      "examThesis": "Tomas de Aquino une la filosofia aristotelica con la fe cristiana: razon y fe se complementan y Dios es ser necesario, causa primera y fin ultimo.",
+      "concepts": [
+        [
+          "Razon y fe",
+          "No se oponen; la razon busca verdades naturales y la fe acepta verdades reveladas por Dios."
+        ],
+        [
+          "Teologia como ciencia",
+          "Organiza racionalmente verdades reveladas partiendo de principios dados por Dios."
+        ],
+        [
+          "Esencia",
+          "Conjunto de caracteristicas fundamentales que hacen que algo sea lo que es."
+        ],
+        [
+          "Existencia",
+          "Hecho de existir; en los seres creados se distingue de la esencia."
+        ],
+        [
+          "Ley natural",
+          "Reflejo de la ley eterna en el ser humano; regula tendencias naturales."
+        ],
+        [
+          "Ley positiva",
+          "Ley elaborada por personas y autoridades; debe reflejar la ley divina y buscar el bien comun."
+        ],
+        [
+          "Dios",
+          "Ser necesario, eterno, perfecto, causa primera y fin ultimo de todo."
+        ],
+        [
+          "Verdad",
+          "Correspondencia entre lo pensado y lo que es; Dios es verdad suprema."
+        ],
+        [
+          "Creacion",
+          "Acto por el que Dios hace existir todo sin materia previa."
+        ],
+        [
+          "Argumento teleologico",
+          "El orden de la naturaleza exige una inteligencia ordenadora."
+        ],
+        [
+          "Cinco vias",
+          "Movimiento, causalidad, contingencia, grados de perfeccion y orden."
+        ],
+        [
+          "Bien comun",
+          "Fin politico que debe perseguir el Estado segun la naturaleza social humana."
+        ]
+      ],
+      "learn": [
+        "Aquino se entiende como Aristoteles cristianizado: conserva materia-forma y finalidad, pero añade Dios y revelacion.",
+        "Clave PAU: razon y fe se complementan, no compiten.",
+        "Las cinco vias no son fe ciega: son argumentos racionales desde la experiencia."
+      ]
+    },
+    {
+      "id": "descartes",
+      "name": "Descartes",
+      "school": "Racionalismo",
+      "color": "#644f9e",
+      "examThesis": "Descartes busca certeza absoluta mediante la duda metodica y fundamenta el conocimiento en el cogito y en la razon.",
+      "concepts": [
+        [
+          "Metodo cartesiano",
+          "Procedimiento para llegar a verdades firmes: evidencia, analisis, sintesis y revision."
+        ],
+        [
+          "Duda metodica",
+          "Dudar de todo lo que pueda ser dudoso para alcanzar una verdad segura."
+        ],
+        [
+          "Cogito",
+          "Primera certeza indudable: pienso, luego existo."
+        ],
+        [
+          "Idea",
+          "Representacion mental de la realidad; puede ser innata, facticia o adventicia."
+        ],
+        [
+          "Sustancia",
+          "Aquello que existe por si mismo."
+        ],
+        [
+          "Sustancia infinita",
+          "Dios, ser infinito, omnisciente y todopoderoso."
+        ],
+        [
+          "Sustancia pensante",
+          "El yo o alma; su atributo es el pensamiento."
+        ],
+        [
+          "Sustancia extensa",
+          "Cuerpos o mundo fisico; ocupa espacio y se rige por leyes mecanicas y matematicas."
+        ],
+        [
+          "Razon",
+          "Facultad universal para pensar con claridad y distinguir verdadero y falso."
+        ],
+        [
+          "Certeza",
+          "Conocimiento absolutamente seguro que se presenta con evidencia clara."
+        ],
+        [
+          "Dualismo antropologico",
+          "El ser humano esta compuesto de alma y cuerpo, sustancias distintas."
+        ],
+        [
+          "Glandula pineal",
+          "Lugar donde Descartes intenta explicar la interaccion alma-cuerpo."
+        ]
+      ],
+      "learn": [
+        "Descartes empieza desconfiando para encontrar algo indudable.",
+        "Si aparece 'certeza', piensa en duda metodica y cogito.",
+        "Su antropologia es dualista: mente/cuerpo, pensamiento/extension."
+      ]
+    },
+    {
+      "id": "hume",
+      "name": "Hume",
+      "school": "Empirismo",
+      "color": "#d85f45",
+      "examThesis": "Hume defiende que todo conocimiento procede de la experiencia y critica la causalidad como creencia nacida del habito.",
+      "concepts": [
+        [
+          "Escepticismo",
+          "Niega la posibilidad de alcanzar una verdad absoluta e indudable."
+        ],
+        [
+          "Empirismo",
+          "La experiencia es la fuente del conocimiento verdadero."
+        ],
+        [
+          "Percepcion",
+          "Contenido de conciencia que puede ser impresion o idea."
+        ],
+        [
+          "Impresion",
+          "Percepcion viva e intensa captada directamente por los sentidos internos o externos."
+        ],
+        [
+          "Idea",
+          "Copia mas debil de una impresion; no hay ideas innatas."
+        ],
+        [
+          "Habito",
+          "Costumbre creada por la repeticion."
+        ],
+        [
+          "Experiencia",
+          "Fundamento de todo conocimiento; conocemos a partir de impresiones sensibles."
+        ],
+        [
+          "Principio de causalidad",
+          "No es verdad racional necesaria, sino creencia surgida de la costumbre."
+        ],
+        [
+          "Creencia",
+          "Idea vivificada por el habito que nos hace esperar que un hecho siga a otro."
+        ],
+        [
+          "Sentimiento moral",
+          "El juicio moral no se basa en la razon sino en agrado, desagrado y simpatia."
+        ]
+      ],
+      "learn": [
+        "Hume es el antidoto contra Descartes: no empieza por razon pura, sino por experiencia.",
+        "Impresion primero, idea despues.",
+        "Causalidad no es necesidad vista por la razon: es expectativa por repeticion."
+      ]
+    },
+    {
+      "id": "kant",
+      "name": "Kant",
+      "school": "Idealismo critico",
+      "color": "#1d7a86",
+      "examThesis": "Kant intenta superar racionalismo y empirismo: el conocimiento surge de datos sensibles organizados por estructuras a priori del sujeto.",
+      "concepts": [
+        [
+          "Sensibilidad",
+          "Facultad que recibe impresiones del mundo exterior a traves de los sentidos."
+        ],
+        [
+          "Razon",
+          "Tendencia humana a sistematizar conocimientos bajo grandes conceptos como mundo, alma y Dios."
+        ],
+        [
+          "Entendimiento",
+          "Interpreta datos de la sensibilidad mediante categorias aportadas por el sujeto."
+        ],
+        [
+          "A priori",
+          "Independiente de la experiencia; condicion que hace posible el conocimiento."
+        ],
+        [
+          "A posteriori",
+          "Basado en la experiencia."
+        ],
+        [
+          "Categoria",
+          "Concepto puro del entendimiento que sintetiza datos de la sensibilidad."
+        ],
+        [
+          "Fenomeno",
+          "Aquello que aparece y que podemos conocer."
+        ],
+        [
+          "Noumeno",
+          "Cosa en si; responsable de la aparicion del fenomeno, pero imposible de conocer."
+        ],
+        [
+          "Imperativo categorico",
+          "Regla moral universal: obra segun una maxima que puedas querer como ley universal."
+        ],
+        [
+          "Autonomia",
+          "Capacidad de elegir nuestras propias normas racionales."
+        ],
+        [
+          "Etica formal",
+          "La moralidad depende de la forma universal de la ley, no de fines empiricos."
+        ]
+      ],
+      "learn": [
+        "Kant no dice solo 'experiencia' ni solo 'razon': el sujeto ordena lo que recibe.",
+        "Fenomeno = lo conocible; noumeno = cosa en si incognoscible.",
+        "Etica: deber y autonomia, no consecuencias."
+      ]
+    },
+    {
+      "id": "marx",
+      "name": "Marx",
+      "school": "Materialismo historico",
+      "color": "#8f3430",
+      "examThesis": "Marx explica la historia desde las condiciones materiales y economicas, y critica la alienacion del trabajador en el capitalismo.",
+      "concepts": [
+        [
+          "Materialismo historico",
+          "Teoria que explica la historia a partir de condiciones materiales y economicas."
+        ],
+        [
+          "Alienacion",
+          "Extraniamiento del sujeto en la sociedad capitalista; el obrero vende su fuerza de trabajo y no posee el producto."
+        ],
+        [
+          "Dialectica",
+          "Proceso dinamico de cambio por conflicto entre elementos contrarios."
+        ],
+        [
+          "Infraestructura",
+          "Base economica: fuerzas productivas y relaciones de produccion."
+        ],
+        [
+          "Superestructura",
+          "Elementos legales, politicos, culturales e ideologicos influidos por la infraestructura."
+        ],
+        [
+          "Fuerzas productivas",
+          "Medios disponibles para producir riqueza: tierras, herramientas, fabricas."
+        ],
+        [
+          "Relaciones de produccion",
+          "Relaciones sociales que organizan propiedad, trabajo y explotacion."
+        ],
+        [
+          "Lucha de clases",
+          "Enfrentamiento entre explotadores y explotados; motor de la historia."
+        ],
+        [
+          "Trabajo / praxis",
+          "Actividad practica transformadora por la que el ser humano modifica la naturaleza y a si mismo."
+        ],
+        [
+          "Plusvalia",
+          "Parte del valor producido por el obrero que el capitalista se apropia."
+        ],
+        [
+          "Estado burgues",
+          "Forma politica que conserva la dominacion de clase."
+        ]
+      ],
+      "learn": [
+        "Marx se entiende desde lo material: economia, trabajo, produccion.",
+        "La conciencia no flota sola: esta condicionada por infraestructura y relaciones sociales.",
+        "Alienacion y plusvalia son claves para explicar explotacion."
+      ]
+    },
+    {
+      "id": "nietzsche",
+      "name": "Nietzsche",
+      "school": "Critica a la cultura occidental",
+      "color": "#56397a",
+      "examThesis": "Nietzsche critica la cultura occidental por negar la vida y propone superar los valores decadentes creando nuevos valores.",
+      "concepts": [
+        [
+          "Critica a Occidente",
+          "La cultura occidental niega la vida, los instintos y el cuerpo."
+        ],
+        [
+          "Critica a Platon",
+          "Platon da mas valor al mundo racional y eterno que al mundo sensible de la vida."
+        ],
+        [
+          "Critica a la religion",
+          "Promueve moral de esclavos, culpa, miedo y rechazo de los sentidos."
+        ],
+        [
+          "Critica a la ciencia",
+          "Busca verdades absolutas y confia demasiado en la razon."
+        ],
+        [
+          "Muerte de Dios",
+          "Los valores absolutos tradicionales han perdido fuerza."
+        ],
+        [
+          "Nihilismo",
+          "Desorientacion tras perder antiguas creencias; puede ser pasivo o activo."
+        ],
+        [
+          "Moral de senores",
+          "Valores de fuertes y nobles: fuerza, salud, orgullo y excelencia."
+        ],
+        [
+          "Moral de esclavos",
+          "Valores de debiles: humildad, mansedumbre y obediencia."
+        ],
+        [
+          "Superhombre",
+          "Ser capaz de decir si a la vida y crear valores nuevos."
+        ],
+        [
+          "Voluntad de poder",
+          "Impulso de incrementar intensidad y plenitud de la vida."
+        ],
+        [
+          "Eterno retorno",
+          "Idea de que todo podria repetirse eternamente, obligando a afirmar cada momento."
+        ],
+        [
+          "Vitalismo",
+          "La vida individual es el punto de partida de toda valoracion."
+        ],
+        [
+          "Metafora",
+          "El lenguaje transforma la realidad en palabras e ideas; no refleja la verdad tal cual."
+        ],
+        [
+          "Perspectivismo",
+          "No existe verdad unica y objetiva; todo conocimiento depende del punto de vista."
+        ],
+        [
+          "Genealogia",
+          "Analisis critico del origen historico de conceptos como moral, verdad o bien."
+        ]
+      ],
+      "learn": [
+        "Nietzsche es critica y propuesta: destruye valores decadentes para crear otros nuevos.",
+        "Muerte de Dios no es solo ateismo: es caida de valores absolutos.",
+        "Su respuesta es afirmar la vida: superhombre, voluntad de poder, eterno retorno."
+      ]
+    },
+    {
+      "id": "ortega",
+      "name": "Ortega y Gasset",
+      "school": "Raciovitalismo",
+      "color": "#28764f",
+      "examThesis": "Ortega defiende que la razon debe partir de la vida concreta: yo soy yo y mi circunstancia.",
+      "concepts": [
+        [
+          "Razon vital",
+          "Razon al servicio de la vida concreta; supera racionalismo y vitalismo."
+        ],
+        [
+          "Circunstancia",
+          "Todo aquello que influye en mi vida y con lo que debo contar."
+        ],
+        [
+          "Perspectivismo",
+          "La verdad depende de la perspectiva desde la que se observa la realidad."
+        ],
+        [
+          "Ideas",
+          "Opiniones individuales discutibles sobre las que hay discrepancias."
+        ],
+        [
+          "Creencias",
+          "Convicciones compartidas en las que se esta, mas que ideas que se tienen."
+        ],
+        [
+          "Masa-mayoria",
+          "Personas que se dejan llevar por opiniones ajenas sin autoexigencia."
+        ],
+        [
+          "Minoria",
+          "Grupo del esfuerzo que acepta salvar su circunstancia mediante excelencia personal."
+        ],
+        [
+          "Generacion",
+          "Conjunto de personas nacidas en una epoca que comparten circunstancias."
+        ],
+        [
+          "Mundo",
+          "Conjunto de facilidades y dificultades donde el ser humano decide su vida."
+        ],
+        [
+          "Razon historica",
+          "Comprende la realidad humana como devenir y evita tratar a las personas como objetos fijos."
+        ],
+        [
+          "Yo y circunstancia",
+          "La vida es proyecto situado: no elegimos todo, pero decidimos dentro de lo dado."
+        ]
+      ],
+      "learn": [
+        "Ortega no separa razon y vida: la razon funciona dentro de la vida.",
+        "Circunstancia no es excusa: es el escenario que hay que salvar.",
+        "Comparalo con Nietzsche por perspectivismo y critica a masas, pero Ortega es menos destructivo y mas historico-vital."
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "platon_aristoteles",
+      "title": "Platon - Aristoteles",
+      "sourceImage": "10_Comparaciones/01_Comparacion_Platon_Aristoteles.jpeg",
+      "axes": {
+        "epistemologia": {
+          "first": "Platon defiende que el conocimiento verdadero es racional y se dirige al Mundo Inteligible; conocer es recordar Ideas.",
+          "second": "Aristoteles parte de la experiencia sensible y llega a universales mediante abstraccion."
+        },
+        "ontologia": {
+          "first": "Platon distingue dos mundos: sensible e inteligible; las Ideas son la realidad plena.",
+          "second": "Aristoteles afirma que la realidad esta en las sustancias concretas compuestas de materia y forma."
+        },
+        "antropologia": {
+          "first": "Platon separa alma y cuerpo; el alma racional debe gobernar sobre las partes irascible y apetitiva.",
+          "second": "Aristoteles defiende union sustancial de alma y cuerpo; el alma es principio vital del cuerpo."
+        },
+        "etica-politica": {
+          "first": "Platon basa la justicia en la armonia del alma y proyecta esa armonia en un Estado ideal.",
+          "second": "Aristoteles busca eudaimonia mediante virtud y termino medio dentro de la polis natural."
+        }
+      }
+    },
+    {
+      "id": "aristoteles_aquino",
+      "title": "Aristoteles - Tomas de Aquino",
+      "sourceImage": "10_Comparaciones/02_Comparacion_Aristoteles_Tomas_de_Aquino.jpeg",
+      "axes": {
+        "epistemologia": {
+          "first": "Ambos conceden que el conocimiento natural parte de los sentidos y se ordena por la razon.",
+          "second": "Aquino mantiene la razon, pero incorpora la fe y verdades reveladas como complemento."
+        },
+        "ontologia": {
+          "first": "Aristoteles explica el ser por sustancia, accidentes, materia-forma y acto-potencia.",
+          "second": "Aquino distingue esencia y existencia y situa a Dios como ser necesario, causa primera y fin ultimo."
+        },
+        "antropologia": {
+          "first": "Aristoteles entiende alma y cuerpo como union sustancial.",
+          "second": "Aquino conserva esa union, pero subraya la inmortalidad del alma y su orientacion a Dios."
+        },
+        "etica-politica": {
+          "first": "Aristoteles busca felicidad natural mediante virtud en la polis.",
+          "second": "Aquino orienta la felicidad ultima a Dios e incorpora ley natural, ley divina y bien comun."
+        }
+      }
+    },
+    {
+      "id": "descartes_hume",
+      "title": "Descartes - Hume",
+      "sourceImage": "10_Comparaciones/03_Comparacion_Descartes_Hume.jpeg",
+      "axes": {
+        "epistemologia": {
+          "first": "Descartes es racionalista: busca certeza mediante razon, metodo y evidencia clara.",
+          "second": "Hume es empirista: todo conocimiento procede de impresiones sensibles."
+        },
+        "ontologia": {
+          "first": "Descartes afirma sustancias: infinita, pensante y extensa.",
+          "second": "Hume desconfia de la idea de sustancia estable si no procede de una impresion."
+        },
+        "antropologia": {
+          "first": "Descartes defiende dualismo alma-cuerpo; el yo es sustancia pensante.",
+          "second": "Hume reduce el yo a una sucesion de percepciones, sin sustancia del yo demostrable."
+        },
+        "etica-politica": {
+          "first": "Descartes confia en la razon como guia de certeza.",
+          "second": "Hume sostiene que la moral nace del sentimiento, agrado, desagrado y simpatia."
+        }
+      }
+    },
+    {
+      "id": "marx_platon",
+      "title": "Marx - Platon",
+      "sourceImage": "10_Comparaciones/04_Comparacion_Marx_Platon.jpeg",
+      "axes": {
+        "epistemologia": {
+          "first": "Marx parte de la praxis y de las condiciones materiales de la vida.",
+          "second": "Platon busca conocimiento racional del mundo inteligible."
+        },
+        "ontologia": {
+          "first": "Marx es materialista: la realidad social se explica por produccion y materia.",
+          "second": "Platon es dualista: mundo sensible y mundo inteligible."
+        },
+        "antropologia": {
+          "first": "Marx define al ser humano por trabajo, praxis y relaciones sociales.",
+          "second": "Platon centra al humano en el alma y su orden racional."
+        },
+        "etica-politica": {
+          "first": "Marx critica el Estado burgues y busca superar clases y explotacion.",
+          "second": "Platon propone un Estado ideal jerarquico gobernado por filosofos."
+        }
+      }
+    },
+    {
+      "id": "nietzsche_ortega",
+      "title": "Nietzsche - Ortega y Gasset",
+      "sourceImage": "10_Comparaciones/05_Comparacion_Nietzsche_Ortega_y_Gasset.jpeg",
+      "axes": {
+        "epistemologia": {
+          "first": "Nietzsche niega una verdad unica y defiende perspectivismo ligado a vida e interpretacion.",
+          "second": "Ortega tambien defiende perspectivismo: se conoce desde una circunstancia."
+        },
+        "ontologia": {
+          "first": "Nietzsche entiende la realidad como devenir, lucha e interpretacion.",
+          "second": "Ortega entiende la realidad humana como vida concreta, proyecto y circunstancia."
+        },
+        "antropologia": {
+          "first": "Nietzsche propone superhombre, voluntad de poder y creacion de valores.",
+          "second": "Ortega afirma que el yo se construye dentro de sus circunstancias."
+        },
+        "etica-politica": {
+          "first": "Nietzsche critica moral de masas y moral de esclavos.",
+          "second": "Ortega critica al hombre-masa y defiende una minoria exigente."
+        }
+      }
+    }
+  ]
+}
