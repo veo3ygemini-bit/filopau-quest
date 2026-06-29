@@ -13,7 +13,7 @@ import {
   Trophy,
   Zap,
 } from "lucide-react";
-import { AXES, getNextLesson, isUnitUnlocked, loadContent, unitStars } from "./lib/content.js";
+import { AXES, getNextLesson, hasBackendApi, isUnitUnlocked, loadContent, unitStars } from "./lib/content.js";
 import { applyBossResult, applyLessonResult, loadProgress, refillHearts, saveProgress } from "./lib/progress.js";
 import { normalizeText, compact } from "./lib/text.js";
 
@@ -37,9 +37,11 @@ export default function App() {
       const [loadedContent, loadedProgress, status] = await Promise.all([
         loadContent(),
         loadProgress(),
-        fetch("/api/status")
-          .then((response) => response.json())
-          .catch(() => ({ ai: false })),
+        hasBackendApi()
+          ? fetch("/api/status")
+              .then((response) => (response.ok ? response.json() : { ai: false }))
+              .catch(() => ({ ai: false }))
+          : Promise.resolve({ ai: false }),
       ]);
       if (!alive) return;
       setContent(loadedContent);
@@ -513,6 +515,7 @@ function BossBattle({ lesson, aiStatus, onDone, onExit }) {
     setLoading(true);
     setError("");
     try {
+      if (!hasBackendApi()) throw new Error("Static hosting without backend");
       const response = await fetch("/api/evaluate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },

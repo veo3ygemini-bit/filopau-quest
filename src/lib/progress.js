@@ -25,14 +25,16 @@ export function hydrateLocalProgress() {
 
 export async function loadProgress() {
   const local = hydrateLocalProgress();
-  try {
-    const response = await fetch("/api/progress");
-    if (response.ok) {
-      const remote = await response.json();
-      return normalizeProgress({ ...local, ...remote });
+  if (hasBackendApi()) {
+    try {
+      const response = await fetch("/api/progress");
+      if (response.ok) {
+        const remote = await response.json();
+        return normalizeProgress({ ...local, ...remote });
+      }
+    } catch {
+      // Keep local fallback.
     }
-  } catch {
-    // Keep local fallback.
   }
   return local;
 }
@@ -40,15 +42,21 @@ export async function loadProgress() {
 export async function saveProgress(progress) {
   const normalized = normalizeProgress(progress);
   localStorage.setItem(STORAGE_KEY, JSON.stringify(normalized));
-  try {
-    await fetch("/api/progress", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(normalized),
-    });
-  } catch {
-    // Local storage is the offline backup.
+  if (hasBackendApi()) {
+    try {
+      await fetch("/api/progress", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(normalized),
+      });
+    } catch {
+      // Local storage is the offline backup.
+    }
   }
+}
+
+function hasBackendApi() {
+  return window.location.protocol !== "file:" && !window.location.hostname.endsWith("github.io");
 }
 
 export function normalizeProgress(progress) {

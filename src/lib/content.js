@@ -101,14 +101,20 @@ const UNIT_DEFS = [
 ];
 
 export async function loadContent() {
-  try {
-    const response = await fetch("/api/content");
-    if (response.ok) return await response.json();
-  } catch {
-    // Local file fallback below.
+  if (hasBackendApi()) {
+    try {
+      const response = await fetch("/api/content");
+      if (response.ok) return await response.json();
+    } catch {
+      // Local file fallback below.
+    }
   }
   const data = cloneAndClean(window.PAU_DATA || { authors: [], comparisons: [] });
   return { ...data, axes: AXES, lessonPlan: buildLessonPlan(data), source: "window" };
+}
+
+export function hasBackendApi() {
+  return window.location.protocol !== "file:" && !window.location.hostname.endsWith("github.io");
 }
 
 export function buildLessonPlan(rawData) {
